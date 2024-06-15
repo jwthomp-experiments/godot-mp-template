@@ -1,0 +1,7 @@
+# Godot 4+ specific ignores
+.godot/
+
+# Project Exports
+exports/
+
+.DS_Store

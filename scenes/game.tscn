@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://cru70vc06d52o"]
+
+[ext_resource type="Script" path="res://scenes/game.gd" id="1_1y01g"]
+[ext_resource type="PackedScene" uid="uid://dx3ahw6bk4au4" path="res://scenes/ui/pause_menu.tscn" id="2_8es4o"]
+[ext_resource type="Texture2D" uid="uid://py6yqm6a5032" path="res://assets/images/backgroundCastles.png" id="2_vpt26"]
+
+[node name="Game" type="Node2D"]
+position = Vector2(2, -1)
+script = ExtResource("1_1y01g")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1.0
+offset_top = -197.0
+offset_right = 1149.0
+offset_bottom = 827.0
+texture = ExtResource("2_vpt26")
+metadata/_edit_use_anchors_ = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("2_8es4o")]
+anchors_preset = -1
+anchor_left = -0.502
+anchor_top = -0.494
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 579.304
+offset_top = 324.112
+offset_right = 577.0
+offset_bottom = 328.0
