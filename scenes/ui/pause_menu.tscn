@@ -1,15 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://dx3ahw6bk4au4"]
+[gd_scene load_steps=2 format=3 uid="uid://dx3ahw6bk4au4"]
 
 [ext_resource type="Script" path="res://scenes/ui/pause_menu.gd" id="1_wdsmi"]
-
-[sub_resource type="SystemFont" id="SystemFont_ig53n"]
-font_names = PackedStringArray("Impact")
-
-[sub_resource type="SystemFont" id="SystemFont_s2eo6"]
-font_names = PackedStringArray("Impact")
-
-[sub_resource type="SystemFont" id="SystemFont_4hdxm"]
-font_names = PackedStringArray("Impact")
 
 [node name="PauseMenu" type="Control"]
 visible = false
@@ -44,7 +35,6 @@ layout_mode = 2
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 12
-theme_override_fonts/font = SubResource("SystemFont_ig53n")
 theme_override_font_sizes/font_size = 64
 text = "PAUSE MENU"
 horizontal_alignment = 1
@@ -63,7 +53,6 @@ alignment = 1
 clip_contents = true
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
-theme_override_fonts/font = SubResource("SystemFont_s2eo6")
 theme_override_font_sizes/font_size = 24
 text = "RETURN TO GAME"
 
@@ -73,7 +62,6 @@ layout_mode = 2
 [node name="Quit" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
-theme_override_fonts/font = SubResource("SystemFont_4hdxm")
 theme_override_font_sizes/font_size = 24
 text = "Quit"
 
