@@ -2,6 +2,13 @@
 .godot/
 
 # Project Exports
-exports/
+exports/*
+!exports/html
+exports/html/*
+!exports/macos
+exports/macos/*
+# But include placeholder files so directory structure is in place for Godot export command
+!exports/html/.placeholder
+!exports/macos/.placeholder
 
 .DS_Store
