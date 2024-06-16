@@ -2,7 +2,7 @@ name: "godot-ci export"
 on: push
 
 env:
-  GODOT_VERSION: 4.3.0
+  GODOT_VERSION: 4.3-beta1
   EXPORT_NAME: godot-mp-template
 
 jobs:
@@ -10,7 +10,7 @@ jobs:
     name: Web Export
     runs-on: ubuntu-20.04
     container:
-      image: barichello/godot-ci:4.2.1
+      image: aaronmrawson/godot-ci:4.3-beta1
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -44,7 +44,7 @@ jobs:
     name: Mac Export
     runs-on: ubuntu-20.04
     container:
-      image: barichello/godot-ci:4.2.1
+      image: aaronmrawson/godot-ci:4.3-beta1
     steps:
       - name: Checkout
         uses: actions/checkout@v2
